@@ -18,6 +18,7 @@ SRCREV = "a487a26a1f19c028d9db1b1155d74b7f4329c8ad"
 
 KBRANCH = "linux-4.9-at91"
 SRC_URI = "git://github.com/linux4sam/linux-at91.git;protocol=git;branch=${KBRANCH}"
+SRC_URI_append_sama5d4 += "file://linux-at91_4.9_sama5d4_vdec.patch"
 SRC_URI += "file://defconfig"
 
 python __anonymous () {
